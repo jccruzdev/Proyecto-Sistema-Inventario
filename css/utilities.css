@@ -2,3 +2,8 @@
 table.table-shrink {
   width: auto;
 }
+
+/*flex-item*/
+.center-flex {
+  justify-content: center;
+}

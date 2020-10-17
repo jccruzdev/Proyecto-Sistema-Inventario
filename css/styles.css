@@ -41,7 +41,7 @@ a {
   display: block;
 }
 
-.logo a {
+.logo a:not(.btn) {
   font-size: 25px;
 }
 
