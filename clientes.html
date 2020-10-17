@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/3a05d60a34.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <title>Inicio | ACME</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li class="logo"><a href="/">ACME</a></li>
+        <li class="item active"><a href="/">Tablero</a></li>
+        <li class="item"><a href="#">Stock</a></li>
+        <li class="item"><a href="#">Clientes</a></li>
+        <li class="item"><a href="">Provedores</a></li>
+      </ul>
+    </nav>
+
+    <header class="main-header">
+      <img
+        class="img-header"
+        src="images/icons/engranaje.png"
+        width="32"
+        height="32"
+        alt="Engranaje"
+      />
+      <h1 class="header-title">Información de clientes</h1>
+      <a class="btn" href="ordenes.html">Ver Ordenes</a>
+    </header>
+
+    <main class="container">
+      <!-- Tabla -->
+      <table class="table-shrink">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Ordenes</th>
+            <th>Cotizaciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-column="First Name">1</td>
+            <td data-column="Last Name">Matman</td>
+            <td data-column="Job Title">
+              <a href="#"><i class="fas fa-book"></i></a>
+            </td>
+            <td data-column="Twitter">
+              <a href="#"><i class="fas fa-search-plus"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td data-column="First Name">2</td>
+            <td data-column="Last Name">Nagy</td>
+            <td data-column="Job Title">
+              <a href="#"><i class="fas fa-book"></i></a>
+            </td>
+            <td data-column="Twitter">
+              <a href="#"><i class="fas fa-search-plus"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

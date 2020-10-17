@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/info-final.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-info">
+      <nav>
+        <ul class="menu">
+          <li class="logo"><a href="/">ACME</a></li>
+          <li class="item active"><a href="/">Tablero</a></li>
+          <li class="item"><a href="#">Stock</a></li>
+          <li class="item"><a href="#">Clientes</a></li>
+          <li class="item"><a href="">Provedores</a></li>
+        </ul>
+      </nav>
+
+      <header class="main-header">
+        <img
+          class="img-header"
+          src="images/icons/engranaje.png"
+          width="32"
+          height="32"
+          alt="Engranaje"
+        />
+        <h1 class="header-title">Cotizaciones</h1>
+        <a class="btn" href="ordenes.html">Generar Cotizacion</a>
+      </header>
+
+      <div class="wrapper">
+        <div class="left-box">
+          <div class="search">
+            <form>
+              <input type="search" placeholder="Buscar Ordenes..." />
+            </form>
+          </div>
+          <div class="orders">
+            <ul>
+              <li>orden 1</li>
+              <li>orden 2</li>
+              <li>orden 3</li>
+              <li>orden 4</li>
+              <li>orden 5</li>
+              <li>orden 1</li>
+              <li>orden 2</li>
+              <li>orden 3</li>
+              <li>orden 4</li>
+              <li>orden 5</li>
+              <li>orden 1</li>
+              <li>orden 2</li>
+              <li>orden 3</li>
+              <li>orden 4</li>
+              <li>orden 5</li>
+              <li>orden 1</li>
+              <li>orden 2</li>
+              <li>orden 3</li>
+              <li>orden 4</li>
+              <li>orden 5</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right-box">
+          <div class="info-container">
+            <div class="info-first-header">
+              <h1>Información Cotizacion #12</h1>
+              <span>Estado: Activo</span>
+            </div>
+
+            <div class="info-second-header">
+              <div class="header-item">
+                <div class="header-text">
+                  <h2>Cliente</h2>
+                  <span>ABCD inc</span>
+                </div>
+                <div class="header-img">
+                  <img src="images/icons/usuario.png" alt="" width="32" height="32" />
+                </div>
+              </div>
+
+              <div class="header-item">
+                <div class="header-text">
+                  <h2>Fecha</h2>
+                  <span>ABCD inc</span>
+                </div>
+
+                <div class="header-img">
+                  <img src="images/icons/calendario.png" alt="" width="32" height="32" />
+                </div>
+              </div>
+            </div>
+            <div class="info-content">
+              <!-- Aquí va la tabla -->
+              <table>
+                <thead>
+                  <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Costo Unitario</th>
+                    <th>Costo Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-column="First Name">Producto A</td>
+                    <td data-column="Last Name">1</td>
+                    <td data-column="Job Title">Chief Sandwich Eater</td>
+                    <td data-column="Twitter">@james</td>
+                  </tr>
+                  <tr>
+                    <td data-column="First Name">Producto B</td>
+                    <td data-column="Last Name">2</td>
+                    <td data-column="Job Title">Designer</td>
+                    <td data-column="Twitter">@andornagy</td>
+                  </tr>
+                  <tr>
+                    <td data-column="First Name">Producto C</td>
+                    <td data-column="Last Name">1</td>
+                    <td data-column="Job Title">Game Tester</td>
+                    <td data-column="Twitter">@tamas</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="controls">
+                <div class="controls-btn">
+                  <a href="#" class="btn">Generar Orden</a>
+                  <a href="#" class="btn warning">Imprimir Cotización</a>
+                </div>
+                <div class="total-price"><strong>Precio Total</strong> <span>$5'300.000</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
