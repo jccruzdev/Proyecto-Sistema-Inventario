@@ -44,6 +44,8 @@
 }
 
 .orders li {
+  display: flex;
+  align-items: center;
   padding: 10px;
   border: 2px solid #fff;
 }
@@ -52,6 +54,16 @@
   color: #fff;
   background: #0275d8;
   cursor: pointer;
+}
+
+.selected {
+  background: #0275d8;
+  color: #fff;
+}
+
+.orders li span {
+  padding-left: 10px;
+  margin-right: auto;
 }
 
 .right-box {

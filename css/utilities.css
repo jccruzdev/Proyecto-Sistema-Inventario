@@ -7,3 +7,13 @@ table.table-shrink {
 .center-flex {
   justify-content: center;
 }
+
+/*Margin*/
+.mt-15 {
+  margin-top: 15px;
+}
+
+/*Background*/
+.lightgreen {
+  background-color: #d6e9c6;
+}

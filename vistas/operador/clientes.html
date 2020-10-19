@@ -11,16 +11,15 @@
     <link rel="stylesheet" href="/css/table.css" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/utilities.css" />
-    <title>Inventario | ACME</title>
+    <title>Inicio | ACME</title>
   </head>
   <body>
     <nav>
       <ul class="menu">
         <li class="logo"><a class="btn danger" href="/">Cerrar</a></li>
         <li class="item"><a href="index.html">Tablero</a></li>
-        <li class="item active"><a href="stock.html">Stock</a></li>
-        <li class="item"><a href="clientes-agregar.html">Clientes</a></li>
-        <li class="item"><a href="proveedores-agregar.html">Provedores</a></li>
+        <li class="item"><a href="stock.html">Stock</a></li>
+        <li class="item active"><a href="clientes.html">Clientes</a></li>
       </ul>
     </nav>
 
@@ -32,8 +31,7 @@
         height="32"
         alt="Engranaje"
       />
-      <h1 class="header-title">Inventario</h1>
-      <!-- <a class="btn" href="ordenes.html">Generar Inventario</a> -->
+      <h1 class="header-title">Información de clientes</h1>
     </header>
 
     <main class="container">
@@ -41,48 +39,31 @@
       <table class="table-shrink">
         <thead>
           <tr>
-            <th>Codigo</th>
+            <th>Id</th>
             <th>Nombre</th>
-            <th>Marca</th>
-            <th>Modelo</th>
-
-            <th>Descripción</th>
-            <th>Cantidad</th>
-            <th>Stock bodega</th>
-            <th>Stock vitrina</th>
-            <th>Precio</th>
-            <th>Editar</th>
+            <th>Ordenes</th>
+            <th>Cotizaciones</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td data-column="First Name">1</td>
             <td data-column="Last Name">Matman</td>
-            <td data-column="First Name">Matman</td>
-            <td data-column="Last Name">Matman</td>
-            <td data-column="First Name">Matman</td>
-            <td data-column="Last Name">Matman</td>
-            <td data-column="Last Name">Matman</td>
-            <td data-column="Job Title">$300.000</td>
-
-            <td data-column="Last Name">Matman</td>
+            <td data-column="Job Title">
+              <a href="#"><i class="fas fa-book"></i></a>
+            </td>
             <td data-column="Twitter">
-              <a href="#"><i class="fas fa-edit"></i></a>
+              <a href="#"><i class="fas fa-search-plus"></i></a>
             </td>
           </tr>
           <tr>
             <td data-column="First Name">2</td>
             <td data-column="Last Name">Nagy</td>
-            <td data-column="Last Name">Matman</td>
-            <td data-column="First Name">Matman</td>
-            <td data-column="Last Name">Matman</td>
-            <td data-column="First Name">Matman</td>
-            <td data-column="Last Name">Matman</td>
-
-            <td data-column="Last Name">Matman</td>
-            <td data-column="Last Name">Matman</td>
+            <td data-column="Job Title">
+              <a href="#"><i class="fas fa-book"></i></a>
+            </td>
             <td data-column="Twitter">
-              <a href="#"><i class="fas fa-edit"></i></a>
+              <a href="#"><i class="fas fa-search-plus"></i></a>
             </td>
           </tr>
         </tbody>

@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="/css/table.css" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/info-final.css" />
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3a05d60a34.js" crossorigin="anonymous"></script>
+    <title>Ordenes de Trabajo | ACME</title>
   </head>
   <body>
     <div class="container-info">
@@ -44,7 +45,10 @@
           </div>
           <div class="orders">
             <ul>
-              <li>orden 1</li>
+              <li class="selected">
+                orden <span class="order-id">1</span>
+                <a href="/form.html"><i class="fas fa-pen"></i></a>
+              </li>
               <li>orden 2</li>
               <li>orden 3</li>
               <li>orden 4</li>
@@ -71,7 +75,7 @@
         <div class="right-box">
           <div class="info-container">
             <div class="info-first-header">
-              <h1>Información Orden #12</h1>
+              <h1>Información Orden #1</h1>
               <span>Estado: Activo</span>
             </div>
 

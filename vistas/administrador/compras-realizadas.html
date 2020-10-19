@@ -7,10 +7,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/3a05d60a34.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/table.css" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/info-final.css" />
-    <title>Document</title>
+    <title>Compras | ACME</title>
   </head>
   <body>
     <div class="container-info">
@@ -33,6 +34,7 @@
           alt="Engranaje"
         />
         <h1 class="header-title">Compras Realizadas</h1>
+        <a class="btn" href="compra-realizar.html"> <i class="fas fa-plus"></i>Añadir Compra</a>
       </header>
 
       <div class="wrapper">
@@ -44,7 +46,10 @@
           </div>
           <div class="orders">
             <ul>
-              <li>Compra 1</li>
+              <li class="selected">
+                Compra <span class="order-id">1</span>
+                <a href="#"><i class="fas fa-trash"></i></a>
+              </li>
               <li>Compra 2</li>
               <li>Compra 3</li>
             </ul>

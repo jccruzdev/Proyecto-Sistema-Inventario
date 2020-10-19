@@ -111,12 +111,36 @@ a {
   background-color: hsl(0, 100%, 35%);
 }
 
-.warning {
-  background: tomato;
+.success {
+  background-color: hsl(134, 100%, 35%);
 }
+
+.success:hover {
+  background-color: hsl(134, 100%, 20%);
+}
+
+.warning {
+  background-color: hsl(30, 100%, 60%);
+}
+
 /*active*/
 .active {
   background: #e0e0e0;
+}
+
+/*Rectangulo*/
+.rectangle {
+  background: #dff0d8;
+  border: 1px solid #d6e9c6;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.rectangle span {
+  color: #3c763d;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 /*Tablet menu*/
@@ -169,5 +193,10 @@ a {
   }
   .box-item {
     width: 25%;
+  }
+
+  /*rectangle*/
+  .rectangle {
+    width: 360px;
   }
 }

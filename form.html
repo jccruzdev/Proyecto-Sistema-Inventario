@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="" href="" />
+    <script src="https://kit.fontawesome.com/3a05d60a34.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/table.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/css/form.css" />
+    <title>Editar Orden | ACME</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li class="logo"><a class="btn danger" href="/">Cerrar</a></li>
+        <li class="item active"><a href="index.html">Tablero</a></li>
+        <li class="item"><a href="stock.html">Stock</a></li>
+        <li class="item"><a href="clientes.html">Clientes</a></li>
+        <li class="item"><a href="">Provedores</a></li>
+      </ul>
+    </nav>
+
+    <header class="main-header">
+      <img
+        class="img-header"
+        src="/images/icons/engranaje.png"
+        width="32"
+        height="32"
+        alt="Engranaje"
+      />
+      <h1 class="header-title">Edite su orden #1</h1>
+      <a class="btn" href="ordenes-trabajo.html">Guardar cambios</a>
+    </header>
+
+    <form action="">
+      <h2>Agregar producto</h2>
+      <ul>
+        <li>
+          <label for="product-id">Codigo del producto:</label>
+          <input type="text" name="" id="product-id" />
+        </li>
+        <li>
+          <label for="product-quantity">Cantidad:</label>
+          <input type="number" name="" id="product-quantity" />
+        </li>
+
+        <li>
+          <button class="btn success" type="submit">Agregar Producto</button>
+          <!-- <button class="btn warning" type="submit">Agregar Producto</button>
+          <button class="btn danger" type="submit">Agregar Producto</button> -->
+        </li>
+      </ul>
+    </form>
+
+    <main class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Costo Unitario</th>
+            <th>Editar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-column="First Name">Producto A</td>
+            <td data-column="Last Name">1</td>
+            <td data-column="Job Title">Chief Sandwich Eater</td>
+
+            <td data-column="Twitter">@james</td>
+            <td>
+              <a href="#"><i class="fa fa-edit"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td data-column="First Name">Producto B</td>
+            <td data-column="Last Name">2</td>
+            <td data-column="Job Title">Designer</td>
+
+            <td data-column="Twitter">@andornagy</td>
+            <td>
+              <a href="#"><i class="fa fa-edit"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td data-column="First Name">Producto C</td>
+            <td data-column="Last Name">1</td>
+            <td data-column="Job Title">Game Tester</td>
+            <td data-column="Twitter">@tamas</td>
+            <td>
+              <a href="#"><i class="fa fa-edit"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
