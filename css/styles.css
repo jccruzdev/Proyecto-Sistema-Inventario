@@ -123,24 +123,13 @@ a {
   background-color: hsl(30, 100%, 60%);
 }
 
-/*active*/
+.warning:hover {
+  background-color: hsl(30, 100%, 40%);
+}
+
+/*active para barra de navegación*/
 .active {
   background: #e0e0e0;
-}
-
-/*Rectangulo*/
-.rectangle {
-  background: #dff0d8;
-  border: 1px solid #d6e9c6;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-}
-
-.rectangle span {
-  color: #3c763d;
-  font-size: 15px;
-  font-weight: bold;
 }
 
 /*Tablet menu*/

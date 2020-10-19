@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,21 +12,6 @@
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="stylesheet" href="../../css/utilities.css" />
     <link rel="stylesheet" href="../../css/form.css" />
-    <style>
-      ul {
-        flex-wrap: nowrap;
-      }
-
-      input {
-        width: 100%;
-      }
-
-      .form-group {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    </style>
 
     <title>Nueva Compra | ACME</title>
   </head>
@@ -37,7 +22,7 @@
         <li class="item active"><a href="index.html">Tablero</a></li>
         <li class="item"><a href="stock.html">Stock</a></li>
         <li class="item"><a href="clientes.html">Clientes</a></li>
-        <li class="item"><a href="proveedores.html">Provedores</a></li>
+        <li class="item"><a href="proveedores-agregar.html">Provedores</a></li>
       </ul>
     </nav>
 
@@ -54,8 +39,8 @@
 
     <div class="container">
       <form>
-        <ul class="formulario">
-          <div class="form-group">
+        <ul class="box">
+          <div class="box-item">
             <li>
               <label for="code">Código:</label>
               <input type="text" id="code" />
@@ -70,7 +55,7 @@
             </li>
           </div>
 
-          <div class="form-group">
+          <div class="box-item">
             <li>
               <label for="model">Modelo:</label>
               <input type="text" id="model" />
@@ -86,7 +71,7 @@
             </li>
           </div>
 
-          <div class="form-group">
+          <div class="box-item">
             <li>
               <label for="price">Precio:</label>
               <input type="number" id="price" />
@@ -105,10 +90,7 @@
               </select>
             </li>
           </div>
-
-          <li>
-            <button class="btn" type="submit">Agregar Producto</button>
-          </li>
+          <li><button class="btn" type="submit">Agregar Producto</button></li>
         </ul>
       </form>
     </div>

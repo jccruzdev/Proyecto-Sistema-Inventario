@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,12 +7,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/3a05d60a34.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../css/table.css" />
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="stylesheet" href="../../css/utilities.css" />
     <link rel="stylesheet" href="../../css/form.css" />
     <title>Agregar Clientes | ACME</title>
+    <script src="https://kit.fontawesome.com/3a05d60a34.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav>
@@ -36,32 +36,30 @@
       <h1 class="header-title">Agregar Cliente</h1>
     </header>
     <div class="container">
-      <div class="formatos">
-        <form>
-          <ul class="formulario">
-            <li>
-              <label for="tipo-id">Tipo de Identificación:</label>
-              <select name="seleccionar">
-                <option value="value1">cédula de ciudadanía</option>
-                <option value="value2">cédula de extranjería</option>
-                <option value="value3">Tarjeta de identidad</option>
-                <option value="value4">Pasaporte</option>
-              </select>
-            </li>
-            <li>
-              <label for="num-id">Número de Identificación:</label>
-              <input type="text" id="id" name="id-user" size="30" />
-            </li>
-            <li>
-              <label for="username">Nombre:</label>
-              <input type="text" name="nombre" id="username" size="40" />
-            </li>
-            <li>
-              <button class="btn" type="#">Agregar Cliente</button>
-            </li>
-          </ul>
-        </form>
-      </div>
+      <form>
+        <ul class="box">
+          <li class="box-item">
+            <label for="tipo">Tipo de Identificación:</label>
+            <select name="seleccionar" id="tipo">
+              <option value="value1">cédula de ciudadanía</option>
+              <option value="value2">cédula de extranjería</option>
+              <option value="value3">Tarjeta de identidad</option>
+              <option value="value4">Pasaporte</option>
+            </select>
+          </li>
+          <li class="box-item">
+            <label for="num-id">Número de Identificación:</label>
+            <input type="text" id="num-id" name="id-user" size="30" />
+          </li>
+          <li class="box-item">
+            <label for="username">Nombre:</label>
+            <input type="text" name="nombre" id="username" size="40" />
+          </li>
+          <li>
+            <button class="btn" type="#">Agregar Cliente</button>
+          </li>
+        </ul>
+      </form>
 
       <div class="tablas">
         <main class="container">

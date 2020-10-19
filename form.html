@@ -38,25 +38,29 @@
       <a class="btn" href="ordenes-trabajo.html">Guardar cambios</a>
     </header>
 
-    <form action="">
-      <h2>Agregar producto</h2>
-      <ul>
-        <li>
-          <label for="product-id">Codigo del producto:</label>
-          <input type="text" name="" id="product-id" />
-        </li>
-        <li>
-          <label for="product-quantity">Cantidad:</label>
-          <input type="number" name="" id="product-quantity" />
-        </li>
+    <div class="container">
+      <form>
+        <h2>Modo: Agregar producto</h2>
+        <ul class="box">
+          <div class="box-item">
+            <li>
+              <label for="product-id">Codigo del producto:</label>
+              <input type="text" name="" id="product-id" />
+            </li>
+            <li>
+              <label for="product-quantity">Cantidad:</label>
+              <input type="number" name="" id="product-quantity" />
+            </li>
+          </div>
 
-        <li>
-          <button class="btn success" type="submit">Agregar Producto</button>
-          <!-- <button class="btn warning" type="submit">Agregar Producto</button>
-          <button class="btn danger" type="submit">Agregar Producto</button> -->
-        </li>
-      </ul>
-    </form>
+          <li>
+            <button class="btn success" type="submit">Agregar Producto</button>
+            <!-- <button class="btn warning" type="submit">Editar Producto</button>
+            <button class="btn danger" type="submit">Eliminar Producto</button> -->
+          </li>
+        </ul>
+      </form>
+    </div>
 
     <main class="container">
       <table>
