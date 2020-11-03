@@ -15,24 +15,19 @@
   </head>
   <body>
     <div class="container-info">
-      <nav>
-        <ul class="menu">
-          <li class="logo"><a class="btn danger" href="../../">Cerrar</a></li>
-          <li class="item active"><a href="index.html">Tablero</a></li>
-          <li class="item"><a href="stock.html">Stock</a></li>
-          <li class="item"><a href="clientes.html">Clientes</a></li>
-        </ul>
+      <nav id="navbar">
+        <div class="container">
+          <ul class="menu">
+            <li class="item current"><a href="index.html">Tablero</a></li>
+            <li class="item"><a href="stock.html">Stock</a></li>
+            <li class="item"><a href="clientes.html">Clientes</a></li>
+            <li class="item logo"><a class="btn danger" href="../../">Cerrar</a></li>
+          </ul>
+        </div>
       </nav>
-
       <header class="main-header">
-        <img
-          class="img-header"
-          src="../../images/icons/engranaje.png"
-          width="32"
-          height="32"
-          alt="Engranaje"
-        />
-        <h1 class="header-title">Cotizaciones</h1>
+        <img src="../../images/icons/engranaje.png" width="32" alt="Engranaje" />
+        <h1>Cotizaciones</h1>
         <a class="btn" href="cotizacion-realizar.html">
           <i class="fas fa-plus"></i> Nueva Cotizacion</a
         >
@@ -100,7 +95,7 @@
                 </div>
               </div>
             </div>
-            <div class="info-content">
+            <div class="info-content" style="overflow-x: auto">
               <!-- Aquí va la tabla -->
               <table>
                 <thead>

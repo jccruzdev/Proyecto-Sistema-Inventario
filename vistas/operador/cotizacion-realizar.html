@@ -15,38 +15,33 @@
     <title>Nueva Cotizacion | ACME</title>
   </head>
   <body>
-    <nav>
-      <ul class="menu">
-        <li class="logo"><a class="btn danger" href="../../">Cerrar</a></li>
-        <li class="item active"><a href="index.html">Tablero</a></li>
-        <li class="item"><a href="stock.html">Stock</a></li>
-        <li class="item"><a href="clientes.html">Clientes</a></li>
-      </ul>
+    <nav id="navbar">
+      <div class="container">
+        <ul class="menu">
+          <li class="item current"><a href="index.html">Tablero</a></li>
+          <li class="item"><a href="stock.html">Stock</a></li>
+          <li class="item"><a href="clientes.html">Clientes</a></li>
+          <li class="item logo"><a class="btn danger" href="../../">Cerrar</a></li>
+        </ul>
+      </div>
     </nav>
 
     <header class="main-header">
-      <img
-        class="img-header"
-        src="../../images/icons/engranaje.png"
-        width="32"
-        height="32"
-        alt="Engranaje"
-      />
-      <h1 class="header-title">Realizar Cotización</h1>
+      <img src="../../images/icons/engranaje.png" width="32" alt="Engranaje" />
+      <h1>Realizar Cotización</h1>
     </header>
-
     <div class="container">
       <form>
-        <ul>
-          <li>
+        <ul class="box">
+          <li class="box-item">
             <label for="id-number">Número de identificación:</label>
             <input type="number" id="id-number" />
           </li>
-          <li>
+          <li class="box-item">
             <label for="product-name">Nombre del producto:</label>
             <input type="text" id="product-name" />
           </li>
-          <li>
+          <li class="box-item">
             <label for="quantity">Cantidad:</label>
             <input type="text" id="quantity" />
           </li>
@@ -55,85 +50,81 @@
           </li>
         </ul>
       </form>
-    </div>
 
-    <div class="container">
       <div class="rectangle">
         <span>Costo Total de la Cotización</span> <span>$25'000.000</span>
       </div>
-    </div>
 
-    <main class="container">
-      <!-- Tabla -->
-      <table class="table-shrink">
-        <thead>
-          <tr>
-            <th>Código</th>
-            <th>Nombre</th>
-            <th>Marca</th>
-            <th>Modelo</th>
-            <th>Ubicación</th>
-            <th>Descripción</th>
-            <th>Cantidad</th>
-            <th>Precio</th>
-            <th>Editar</th>
-          </tr>
-        </thead>
+      <main class="container" style="overflow-x: auto">
+        <!-- Tabla -->
+        <table class="center">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Nombre</th>
+              <th>Marca</th>
+              <th>Modelo</th>
+              <th>Ubicación</th>
+              <th>Descripción</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Editar</th>
+            </tr>
+          </thead>
 
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Hi</td>
-            <td>Hi</td>
-            <td>Hi</td>
-            <td>Hi</td>
-            <td>Hi</td>
-            <td>Hi</td>
-            <td>Hi</td>
-            <td>
-              <a href="#"><i class="fa fa-edit"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Hi</td>
-            <td>Hi</td>
-            <td>Hi</td>
-            <td>Hi</td>
-            <td>Hi</td>
-            <td>Hi</td>
-            <td>Hi</td>
-            <td>
-              <a href="#"><i class="fa fa-edit"></i></a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </main>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>
+                <a href="#"><i class="fa fa-edit"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>
+                <a href="#"><i class="fa fa-edit"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
 
-    <div class="container">
-      <button class="btn">Guardar Cotización</button>
-      <button class="btn success">Generar orden</button>
-    </div>
+      <button class="btn mt-15">Guardar Cotización</button>
+      <button class="btn success mt-15">Generar orden</button>
 
-    <div class="container">
       <form class="lightgreen mt-15">
-        <h3>Para genenerar una orden llene los siguientes campos:</h3>
-        <ul>
-          <li>
-            <label for="payment-method">Método de pago:</label>
-            <select name="seleccionar" id="payment-method">
-              <option value="value1">Tajeta Débito</option>
-              <option value="value2">Efectivo</option>
-            </select>
-          </li>
-          <li>
-            <label for="responsible">Responsable:</label>
-            <input type="text" id="responsible" />
-          </li>
-          <li>
-            <button class="btn" type="submit">Finalizar</button>
-          </li>
+        <h3>Para generar una orden llene los siguientes campos:</h3>
+        <ul class="box">
+          <div>
+            <li>
+              <label for="payment-method">Método de pago:</label>
+              <select name="seleccionar" id="payment-method">
+                <option value="value1">Tajeta Débito</option>
+                <option value="value2">Efectivo</option>
+              </select>
+            </li>
+            <li>
+              <label for="responsible">Responsable:</label>
+              <input type="text" id="responsible" />
+            </li>
+            <li>
+              <button class="btn" type="submit">Finalizar</button>
+            </li>
+          </div>
         </ul>
       </form>
     </div>

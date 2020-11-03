@@ -15,29 +15,25 @@
     <script src="https://kit.fontawesome.com/3a05d60a34.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav>
-      <ul class="menu">
-        <li class="logo"><a class="btn danger" href="../../">Cerrar</a></li>
-        <li class="item"><a href="index.html">Tablero</a></li>
-        <li class="item"><a href="stock.html">Stock</a></li>
-        <li class="item active"><a href="clientes.html">Clientes</a></li>
-      </ul>
+    <nav id="navbar">
+      <div class="container">
+        <ul class="menu">
+          <li class="item"><a href="index.html">Tablero</a></li>
+          <li class="item"><a href="stock.html">Stock</a></li>
+          <li class="item current"><a href="clientes.html">Clientes</a></li>
+          <li class="item logo"><a class="btn danger" href="../../">Cerrar</a></li>
+        </ul>
+      </div>
     </nav>
 
     <header class="main-header">
-      <img
-        class="img-header"
-        src="../../images/icons/engranaje.png"
-        width="32"
-        height="32"
-        alt="Engranaje"
-      />
-      <h1 class="header-title">Información de clientes</h1>
+      <img src="../../images/icons/engranaje.png" width="32" alt="Engranaje" />
+      <h1>Información de clientes</h1>
     </header>
 
-    <main class="container">
+    <main class="container" style="overflow-x: auto">
       <!-- Tabla -->
-      <table class="table-shrink">
+      <table class="center">
         <thead>
           <tr>
             <th>Id</th>

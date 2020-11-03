@@ -9,64 +9,72 @@ body {
   color: #000;
 }
 
-nav {
-  padding: 0px 25px;
+ul {
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+/*Utilites*/
+.container {
+  margin: auto;
+  max-width: 1500px;
+  padding: 0 20px;
+  overflow-x: auto;
+}
+
+/*Navbar*/
+#navbar {
+  padding: 10px;
   background: #f5f5f5;
   border-bottom: 1px solid #000000;
 }
 
-ul {
+#navbar .menu {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+#navbar .menu .item {
+  width: 100%;
+  text-align: center;
+  outline: none;
 }
 
-.container {
-  padding: 0 25px;
-}
-
-.menu li {
-  font-size: 16px;
-  padding: 15px 5px;
-}
-
-.menu li.item:hover {
+#navbar .menu a:not(.btn):hover {
   background: #e0e0e0;
 }
 
-.menu li a {
+#navbar a {
   display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+  color: #000;
 }
 
-.logo a:not(.btn) {
-  font-size: 25px;
+#navbar a.btn {
+  color: #fff;
+  padding: 5px 15px;
+  margin-top: 10px;
 }
 
-/*Menú para mobile*/
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.item,
-.logo {
-  width: 100%;
-  text-align: center;
+/*active para barra de navegación*/
+.current {
+  background: #e0e0e0;
 }
 
 /*Header mobile*/
 .main-header {
-  background: #e0e0e0;
-  padding: 10px 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background: #e0e0e0;
+  padding: 10px 25px;
 }
 
 .main-header h1 {
@@ -74,7 +82,7 @@ a {
   text-align: center;
 }
 
-/*Container mobile*/
+/*Box mobile*/
 .box {
   padding: 10px 25px;
   display: flex;
@@ -96,6 +104,7 @@ a {
   font-weight: bold;
   text-align: center;
   background: hsl(208, 100%, 43%);
+  text-decoration: none;
   border-radius: 10px;
 }
 
@@ -127,19 +136,13 @@ a {
   background-color: hsl(30, 100%, 40%);
 }
 
-/*active para barra de navegación*/
-.active {
-  background: #e0e0e0;
-}
-
 /*Tablet menu*/
 @media all and (min-width: 468px) {
-  /*Menu*/
-  .menu {
-    justify-content: center;
+  #navbar .menu .item {
+    width: 100%;
   }
 
-  .item {
+  #navbar .menu .item:not(.logo) {
     width: 25%;
   }
 
@@ -156,19 +159,20 @@ a {
 
 /*Desktop menu*/
 @media all and (min-width: 768px) {
-  /*Menu*/
-  .item,
-  .logo {
+  #navbar .menu {
+    justify-content: start;
+  }
+
+  #navbar .menu .item {
     width: auto;
   }
 
-  .logo {
-    order: 1;
-    margin-left: auto;
+  #navbar .menu .item:not(.logo) {
+    width: auto;
   }
 
-  .menu li {
-    padding: 15px 10px;
+  #navbar .menu .logo {
+    margin-left: auto;
   }
 
   /*Header*/

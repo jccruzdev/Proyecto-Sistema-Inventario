@@ -7,38 +7,34 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/3a05d60a34.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../css/table.css" />
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="stylesheet" href="../../css/utilities.css" />
+    <script src="https://kit.fontawesome.com/3a05d60a34.js" crossorigin="anonymous"></script>
     <title>Inicio | ACME</title>
   </head>
   <body>
-    <nav>
-      <ul class="menu">
-        <li class="logo"><a class="btn danger" href="../../">Cerrar</a></li>
-        <li class="item"><a href="index.html">Tablero</a></li>
-        <li class="item"><a href="stock.html">Stock</a></li>
-        <li class="item active"><a href="clientes.html">Clientes</a></li>
-        <li class="item"><a href="proveedores-agregar.html">Provedores</a></li>
-      </ul>
+    <nav id="navbar">
+      <div class="container">
+        <ul class="menu">
+          <li class="item"><a href="index.html">Tablero</a></li>
+          <li class="item"><a href="stock.html">Stock</a></li>
+          <li class="item current"><a href="clientes-agregar.html">Clientes</a></li>
+          <li class="item"><a href="proveedores-agregar.html">Provedores</a></li>
+          <li class="item logo"><a class="btn danger" href="../../index.html">Cerrar</a></li>
+        </ul>
+      </div>
     </nav>
 
     <header class="main-header">
-      <img
-        class="img-header"
-        src="../../images/icons/engranaje.png"
-        width="32"
-        height="32"
-        alt="Engranaje"
-      />
-      <h1 class="header-title">Información de clientes</h1>
+      <img src="../../images/icons/engranaje.png" width="32" alt="Engranaje" />
+      <h1>Información de clientes</h1>
       <a class="btn" href="clientes-agregar.html"> <i class="fas fa-plus"></i>Agregar Cliente</a>
     </header>
 
-    <main class="container">
+    <main class="container" style="overflow-x: auto">
       <!-- Tabla -->
-      <table class="table-shrink">
+      <table>
         <thead>
           <tr>
             <th>Id</th>

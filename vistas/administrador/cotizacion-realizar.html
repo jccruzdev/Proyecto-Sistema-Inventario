@@ -15,14 +15,16 @@
     <title>Nueva Cotizacion | ACME</title>
   </head>
   <body>
-    <nav>
-      <ul class="menu">
-        <li class="logo"><a class="btn danger" href="../../">Cerrar</a></li>
-        <li class="item active"><a href="index.html">Tablero</a></li>
-        <li class="item"><a href="stock.html">Stock</a></li>
-        <li class="item"><a href="clientes.html">Clientes</a></li>
-        <li class="item"><a href="proveedores-agregar.html">Provedores</a></li>
-      </ul>
+    <nav id="navbar">
+      <div class="container">
+        <ul class="menu">
+          <li class="item current"><a href="index.html">Tablero</a></li>
+          <li class="item"><a href="stock.html">Stock</a></li>
+          <li class="item"><a href="clientes-agregar.html">Clientes</a></li>
+          <li class="item"><a href="proveedores-agregar.html">Provedores</a></li>
+          <li class="item logo"><a class="btn danger" href="../../index.html">Cerrar</a></li>
+        </ul>
+      </div>
     </nav>
 
     <header class="main-header">
@@ -61,9 +63,9 @@
         <span>Costo Total de la Cotización</span> <span>$25'000.000</span>
       </div>
 
-      <main>
+      <main class="container" style="overflow-x: auto">
         <!-- Tabla -->
-        <table class="table-shrink">
+        <table class="center">
           <thead>
             <tr>
               <th>Código</th>
@@ -109,11 +111,11 @@
         </table>
       </main>
 
-      <button class="btn">Guardar Cotización</button>
-      <button class="btn success">Generar orden</button>
+      <button class="btn mt-15">Guardar Cotización</button>
+      <button class="btn success mt-15">Generar orden</button>
 
       <form class="lightgreen mt-15">
-        <h3>Para genenerar una orden llene los siguientes campos:</h3>
+        <h3>Para generar una orden llene los siguientes campos:</h3>
         <ul class="box">
           <div>
             <li>

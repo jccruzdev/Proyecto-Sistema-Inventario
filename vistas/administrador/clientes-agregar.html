@@ -11,29 +11,25 @@
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="stylesheet" href="../../css/utilities.css" />
     <link rel="stylesheet" href="../../css/form.css" />
-    <title>Agregar Clientes | ACME</title>
     <script src="https://kit.fontawesome.com/3a05d60a34.js" crossorigin="anonymous"></script>
+    <title>Agregar Clientes | ACME</title>
   </head>
   <body>
-    <nav>
-      <ul class="menu">
-        <li class="logo"><a class="btn danger" href="../../">Cerrar</a></li>
-        <li class="item"><a href="index.html">Tablero</a></li>
-        <li class="item"><a href="stock.html">Stock</a></li>
-        <li class="item active"><a href="clientes-agregar.html">Clientes</a></li>
-        <li class="item"><a href="proveedores-agregar.html">Provedores</a></li>
-      </ul>
+    <nav id="navbar">
+      <div class="container">
+        <ul class="menu">
+          <li class="item"><a href="index.html">Tablero</a></li>
+          <li class="item"><a href="stock.html">Stock</a></li>
+          <li class="item current"><a href="clientes-agregar.html">Clientes</a></li>
+          <li class="item"><a href="proveedores-agregar.html">Provedores</a></li>
+          <li class="item logo"><a class="btn danger" href="../../index.html">Cerrar</a></li>
+        </ul>
+      </div>
     </nav>
 
     <header class="main-header">
-      <img
-        class="img-header"
-        src="../../images/icons/engranaje.png"
-        width="32"
-        height="32"
-        alt="Engranaje"
-      />
-      <h1 class="header-title">Agregar Cliente</h1>
+      <img src="../../images/icons/engranaje.png" width="32" alt="Engranaje" />
+      <h1>Agregar Cliente</h1>
     </header>
     <div class="container">
       <form>
@@ -61,43 +57,41 @@
         </ul>
       </form>
 
-      <div class="tablas">
-        <main class="container">
-          <!-- Tabla -->
-          <table>
-            <thead>
-              <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Ordenes</th>
-                <th>Cotizaciones</th>
-                <th>Editar</th>
-              </tr>
-            </thead>
+      <main class="container" style="overflow-x: auto">
+        <!-- Tabla -->
+        <table class="center">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Nombre</th>
+              <th>Ordenes</th>
+              <th>Cotizaciones</th>
+              <th>Editar</th>
+            </tr>
+          </thead>
 
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Hi</td>
-                <td>Hi</td>
-                <td>Hi</td>
-                <td>
-                  <a href="#"><i class="fa fa-edit"></i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Hi</td>
-                <td>Hi</td>
-                <td>Hi</td>
-                <td>
-                  <a href="#"><i class="fa fa-edit"></i></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </main>
-      </div>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>
+                <a href="#"><i class="fa fa-edit"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>Hi</td>
+              <td>
+                <a href="#"><i class="fa fa-edit"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
     </div>
   </body>
 </html>

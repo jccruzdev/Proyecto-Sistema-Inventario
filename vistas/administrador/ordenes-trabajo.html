@@ -15,14 +15,16 @@
   </head>
   <body>
     <div class="container-info">
-      <nav>
-        <ul class="menu">
-          <li class="logo"><a class="btn danger" href="../../">Cerrar</a></li>
-          <li class="item active"><a href="index.html">Tablero</a></li>
-          <li class="item"><a href="stock.html">Stock</a></li>
-          <li class="item"><a href="clientes.html">Clientes</a></li>
-          <li class="item"><a href="proveedores-agregar.html">Provedores</a></li>
-        </ul>
+      <nav id="navbar">
+        <div class="container">
+          <ul class="menu">
+            <li class="item current"><a href="index.html">Tablero</a></li>
+            <li class="item"><a href="stock.html">Stock</a></li>
+            <li class="item"><a href="clientes-agregar.html">Clientes</a></li>
+            <li class="item"><a href="proveedores-agregar.html">Provedores</a></li>
+            <li class="item logo"><a class="btn danger" href="../../index.html">Cerrar</a></li>
+          </ul>
+        </div>
       </nav>
 
       <header class="main-header">
@@ -139,7 +141,7 @@
                 </div>
               </div>
             </div>
-            <div class="info-content">
+            <div class="info-content" style="overflow-x: auto">
               <!-- Aquí va la tabla -->
               <table>
                 <thead>

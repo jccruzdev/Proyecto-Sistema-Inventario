@@ -1,11 +1,10 @@
-/*Tablas*/
-table.table-shrink {
-  width: auto;
-}
-
 /*flex-item*/
 .center-flex {
   justify-content: center;
+}
+
+.center {
+  margin: auto;
 }
 
 /*Margin*/

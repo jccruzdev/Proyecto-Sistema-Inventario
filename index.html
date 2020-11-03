@@ -2,12 +2,12 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Página para el control del inventario" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <link rel="" href="" />
     <script src="https://kit.fontawesome.com/3a05d60a34.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/table.css" />
@@ -15,26 +15,26 @@
     <title>Inicio | ACME</title>
   </head>
   <body>
-    <nav>
-      <ul class="menu">
-        <li class="logo"><a href="index.html">ACME</a></li>
-        <li class="item active"><a href="index.html">Inicio</a></li>
-      </ul>
+    <nav id="navbar">
+      <div class="container">
+        <ul class="menu">
+          <li class="item current"><a href="index.html">Inicio</a></li>
+          <li class="item logo"><a href="index.html">ACME</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <main>
-      <article class="box center-flex">
-        <section class="box-item">
-          <img src="images/icons/administrador.png" alt="Admin" />
-          <h2>Administrador</h2>
-          <a href="vistas/administrador/" class="btn">Ingresar</a>
-        </section>
-        <section class="box-item">
-          <img src="images/icons/datos-del-usuario.png" alt="Punto de venta" />
-          <h2>Operador</h2>
-          <a href="vistas/operador/" class="btn">Ingresar</a>
-        </section>
-      </article>
-    </main>
+    <article id="box" class="box center-flex">
+      <section class="box-item">
+        <img src="images/icons/administrador.png" alt="Admin" />
+        <h2>Administrador</h2>
+        <a href="vistas/administrador/" class="btn">Ingresar</a>
+      </section>
+      <section class="box-item">
+        <img src="images/icons/datos-del-usuario.png" alt="Punto de venta" />
+        <h2>Operador</h2>
+        <a href="vistas/operador/" class="btn">Ingresar</a>
+      </section>
+    </article>
   </body>
 </html>

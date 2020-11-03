@@ -14,30 +14,26 @@
     <title>Inventario | ACME</title>
   </head>
   <body>
-    <nav>
-      <ul class="menu">
-        <li class="logo"><a class="btn danger" href="../../">Cerrar</a></li>
-        <li class="item"><a href="index.html">Tablero</a></li>
-        <li class="item active"><a href="stock.html">Stock</a></li>
-        <li class="item"><a href="clientes.html">Clientes</a></li>
-      </ul>
+    <nav id="navbar">
+      <div class="container">
+        <ul class="menu">
+          <li class="item"><a href="index.html">Tablero</a></li>
+          <li class="item current"><a href="stock.html">Stock</a></li>
+          <li class="item"><a href="clientes.html">Clientes</a></li>
+          <li class="item logo"><a class="btn danger" href="../../">Cerrar</a></li>
+        </ul>
+      </div>
     </nav>
 
     <header class="main-header">
-      <img
-        class="img-header"
-        src="../../images/icons/engranaje.png"
-        width="32"
-        height="32"
-        alt="Engranaje"
-      />
-      <h1 class="header-title">Inventario</h1>
+      <img src="../../images/icons/engranaje.png" width="32" alt="Engranaje" />
+      <h1>Inventario</h1>
       <!-- <a class="btn" href="ordenes.html">Generar Inventario</a> -->
     </header>
 
-    <main class="container">
+    <main class="container" style="overflow-x: auto">
       <!-- Tabla -->
-      <table class="table-shrink">
+      <table class="center">
         <thead>
           <tr>
             <th>Codigo</th>

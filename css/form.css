@@ -7,6 +7,10 @@ form .box {
   padding: 0;
 }
 
+.box-item {
+  text-align: left;
+}
+
 form li {
   padding: 10px;
 }

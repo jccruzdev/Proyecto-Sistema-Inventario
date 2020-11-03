@@ -1,19 +1,18 @@
 table {
-  margin-bottom: 2.5rem;
-}
-
-table {
   border-spacing: 0;
-  display: block;
-  overflow-x: auto;
   text-align: left;
-  width: 100%;
+
+  border-collapse: collapse;
 }
 
 td,
 th {
   border-bottom: 0.1rem solid #e1e1e1;
   padding: 1.2rem 1.5rem;
+}
+
+tr:nth-child(even) {
+  background-color: #e0e0e0;
 }
 
 td:first-child,
@@ -24,13 +23,4 @@ th:first-child {
 td:last-child,
 th:last-child {
   padding-right: 0;
-}
-
-@media (max-width: 0) {
-  /*40rem por defecto*/
-  /*80rem funciona perfecto*/
-  table {
-    display: table;
-    overflow-x: initial;
-  }
 }
